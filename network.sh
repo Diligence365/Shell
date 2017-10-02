@@ -1,4 +1,5 @@
 #!/bin/bash
+#get network parameter
 
 adapter=$(ifconfig | grep -m1 'encap:Ethernet' | cut -d' ' -f1)
 echo "Adapter: $adapter"
